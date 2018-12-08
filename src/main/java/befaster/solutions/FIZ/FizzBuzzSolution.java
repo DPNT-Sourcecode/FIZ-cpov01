@@ -15,23 +15,27 @@ public class FizzBuzzSolution {
 			return "fizz";
 		if (isBuzz(number))
 			return "buzz";
-
+		if (isDeluxe(number))
+			return "deluxe";
 		return String.valueOf(number);
 	}
-	
+
 	private boolean isFizz(Integer number) {
-		return ( (number % 3) == 0) || (String.valueOf(number).indexOf("3")>=0);
+		return ((number % 3) == 0) || (String.valueOf(number).indexOf("3") >= 0);
 	}
-	
+
 	private boolean isBuzz(Integer number) {
-		return ( (number % 5) == 0) || (String.valueOf(number).indexOf("5")>=0);
+		return ((number % 5) == 0) || (String.valueOf(number).indexOf("5") >= 0);
 	}
-	
-	private boolean isDeluxe (Integer number) {
-	Set s = new HashSet(Arrays.asList(String.valueOf(number).split("")));
-	return (s.size() == 1);
+
+	private boolean isDeluxe(Integer number) {
+		if (number < 11)
+			return false;
+		Set s = new HashSet(Arrays.asList(String.valueOf(number).split("")));
+		return (s.size() == 1);
 	}
 
 }
+
 
 
