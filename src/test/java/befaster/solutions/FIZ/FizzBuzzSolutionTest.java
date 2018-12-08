@@ -21,10 +21,31 @@ public class FizzBuzzSolutionTest {
 		//given
 		int input = 3;
 		//when 
-		String actual = fizzBuzzSolution.fizzBuzz(3);
+		String actual = fizzBuzzSolution.fizzBuzz(input);
 		//then
 		assertThat("fizz",is(equalTo(actual)));
 	}
+	
+	@Test
+	public void testBuzz() {
+		//given
+		int input = 5;
+		//when 
+		String actual = fizzBuzzSolution.fizzBuzz(input);
+		//then
+		assertThat("buzz",is(equalTo(actual)));
+	}
+	
+	@Test
+	public void testFizzBuzz() {
+		//given
+		int input = 15;
+		//when 
+		String actual = fizzBuzzSolution.fizzBuzz(input);
+		//then
+		assertThat("fizz buzz",is(equalTo(actual)));
+	}
 
 }
+
 
