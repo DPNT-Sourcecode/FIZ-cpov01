@@ -9,6 +9,10 @@ public class FizzBuzzSolution {
 	public String fizzBuzz(Integer number) {
 		if (isFizz(number) && isBuzz(number) && isDeluxe(number))
 			return "fizz buzz deluxe";
+		if (isFizz(number) && isDeluxe(number))
+			return "fizz deluxe";
+		if (isBuzz(number) && isDeluxe(number))
+			return "buzz deluxe";
 		if (isFizz(number) && isBuzz(number))
 			return "fizz buzz";
 		if (isFizz(number))
@@ -36,6 +40,7 @@ public class FizzBuzzSolution {
 	}
 
 }
+
 
 
 

@@ -103,10 +103,11 @@ public class FizzBuzzSolutionTest {
 		//when 
 		String actual = fizzBuzzSolution.fizzBuzz(input);
 		//then
-		assertThat("deluxe",is(equalTo(actual)));
+		assertThat("fizz deluxe",is(equalTo(actual)));
 	}
 
 }
+
 
 
 
