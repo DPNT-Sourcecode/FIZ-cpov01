@@ -21,7 +21,7 @@ public class HelloSolutionTest {
 	@Test
 	public void test() {
 		//Given input
-		String friendName = "Hello world";
+		String friendName = "Hello, World!";
 		//when 
 		String actual = helloSolution.hello(friendName);
 		//then
@@ -29,4 +29,5 @@ public class HelloSolutionTest {
 	}
 
 }
+
 
