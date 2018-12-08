@@ -69,16 +69,11 @@ public class FizzBuzzSolutionTest {
 	@Test
 	public void testContains5ButNotDivisibleBy5() {
 		//given
-		int input = 51;
+		int input = 52;
 		//when 
 		String actual = fizzBuzzSolution.fizzBuzz(input);
 		//then
-		assertThat("buzz",is(equalTo(actual)));
+		assertThat("fizz buzz",is(equalTo(actual)));
 	}
 
 }
-
-
-
-
-
