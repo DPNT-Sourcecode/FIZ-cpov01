@@ -93,7 +93,7 @@ public class FizzBuzzSolutionTest {
 		//when 
 		String actual = fizzBuzzSolution.fizzBuzz(input);
 		//then
-		assertThat("fizz buzz deluxe",is(equalTo(actual)));
+		assertThat("fizz buzz fake deluxe",is(equalTo(actual)));
 	}
 	
 	@Test
@@ -103,7 +103,8 @@ public class FizzBuzzSolutionTest {
 		//when 
 		String actual = fizzBuzzSolution.fizzBuzz(input);
 		//then
-		assertThat("fizz deluxe",is(equalTo(actual)));
+		assertThat("fizz fake deluxe",is(equalTo(actual)));
 	}
 
 }
+
