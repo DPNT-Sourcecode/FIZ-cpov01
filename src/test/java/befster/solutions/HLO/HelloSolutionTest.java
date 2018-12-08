@@ -1,5 +1,7 @@
 package befster.solutions.HLO;
 
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
 import org.junit.Before;
@@ -18,7 +20,12 @@ public class HelloSolutionTest {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		//Given input
+		String friendName = "Hello";
+		//when 
+		String actual = helloSolution.hello(friendName);
+		//then
+		assertThat(friendName,is(equalTo(actual)));
 	}
 
 }
