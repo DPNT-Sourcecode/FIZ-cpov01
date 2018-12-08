@@ -55,8 +55,19 @@ public class FizzBuzzSolutionTest {
 		//then
 		assertThat("4",is(equalTo(actual)));
 	}
+	
+	@Test
+	public void testContains3ButNotDivisibleBy3() {
+		//given
+		int input = 31;
+		//when 
+		String actual = fizzBuzzSolution.fizzBuzz(input);
+		//then
+		assertThat("fizz",is(equalTo(actual)));
+	}
 
 }
+
 
 
 
