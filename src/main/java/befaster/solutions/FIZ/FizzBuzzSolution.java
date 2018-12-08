@@ -4,7 +4,7 @@ package befaster.solutions.FIZ;
 public class FizzBuzzSolution {
 
 	public String fizzBuzz(Integer number) {
-		if (isFizz(number) || isBuzz(number))
+		if (isFizz(number) && isBuzz(number))
 			return "fizz buzz";
 		if (isFizz(number))
 			return "fizz";
@@ -23,3 +23,4 @@ public class FizzBuzzSolution {
 	}
 
 }
+

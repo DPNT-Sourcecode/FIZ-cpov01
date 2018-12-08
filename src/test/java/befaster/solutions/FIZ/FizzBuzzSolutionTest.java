@@ -73,7 +73,18 @@ public class FizzBuzzSolutionTest {
 		//when 
 		String actual = fizzBuzzSolution.fizzBuzz(input);
 		//then
+		assertThat("buzz",is(equalTo(actual)));
+	}
+	
+	@Test
+	public void testContains3And5() {
+		//given
+		int input = 35;
+		//when 
+		String actual = fizzBuzzSolution.fizzBuzz(input);
+		//then
 		assertThat("fizz buzz",is(equalTo(actual)));
 	}
 
 }
+
