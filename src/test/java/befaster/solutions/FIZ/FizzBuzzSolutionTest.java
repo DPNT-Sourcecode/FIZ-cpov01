@@ -45,7 +45,18 @@ public class FizzBuzzSolutionTest {
 		//then
 		assertThat("fizz buzz",is(equalTo(actual)));
 	}
+	
+	@Test
+	public void testNumber() {
+		//given
+		int input = 4;
+		//when 
+		String actual = fizzBuzzSolution.fizzBuzz(input);
+		//then
+		assertThat("4",is(equalTo(actual)));
+	}
 
 }
+
 
 
