@@ -21,13 +21,14 @@ public class HelloSolutionTest {
 	@Test
 	public void test() {
 		//Given input
-		String friendName = "Hello, World!";
+		String friendName = "John";
 		//when 
 		String actual = helloSolution.hello(friendName);
 		//then
-		assertThat(friendName,is(equalTo(actual)));
+		assertThat("Hello, "+friendName+"!",is(equalTo(actual)));
 	}
 
 }
+
 
 
