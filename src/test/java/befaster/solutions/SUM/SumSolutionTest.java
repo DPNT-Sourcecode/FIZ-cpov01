@@ -25,5 +25,14 @@ public class SumSolutionTest {
     	assertThat(sum.compute(10, 0), equalTo(10));
     	
     }
+    
+    @Test
+    public void compute_MaxNumbers() {
+    	assertThat(sum.compute(100, 100), equalTo(200));
+    	
+    }
+    
+    
 }
+
 
