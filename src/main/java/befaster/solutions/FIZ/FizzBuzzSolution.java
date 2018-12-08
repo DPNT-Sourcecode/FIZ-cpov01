@@ -8,7 +8,7 @@ public class FizzBuzzSolution {
 			return "fizz buzz";
 		if (isFizz(number))
 			return "fizz";
-		if ((number % 5) == 0)
+		if (isBuzz(number))
 			return "buzz";
 
 		return String.valueOf(number);
@@ -17,8 +17,13 @@ public class FizzBuzzSolution {
 	private boolean isFizz(Integer number) {
 		return ( (number % 3) == 0) || (String.valueOf(number).indexOf("3")>=0);
 	}
+	
+	private boolean isBuzz(Integer number) {
+		return ( (number % 5) == 0) || (String.valueOf(number).indexOf("5")>=0);
+	}
 
 }
+
 
 
 
