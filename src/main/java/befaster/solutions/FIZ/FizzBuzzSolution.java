@@ -50,8 +50,14 @@ public class FizzBuzzSolution {
 	private boolean isBuzz(Integer number) {
 		return ((number % 5) == 0) || (String.valueOf(number).indexOf("5") >= 0);
 	}
-
+	
 	private boolean isDeluxe(Integer number) {
+		return (((number % 3) == 0) && (String.valueOf(number).indexOf("3") >= 0)
+				||
+				((number % 5) == 0) && (String.valueOf(number).indexOf("5") >= 0));
+	}
+
+	private boolean isDeluxeDepr(Integer number) {
 		if (number < 11)
 			return false;
 		Set s = new HashSet(Arrays.asList(String.valueOf(number).split("")));
@@ -59,4 +65,5 @@ public class FizzBuzzSolution {
 	}
 
 }
+
 
